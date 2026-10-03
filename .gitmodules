@@ -5,4 +5,4 @@
 [submodule "external/UniverseLib"]
 	path = external/UniverseLib
 	url = https://github.com/duhhbzz/UniverseLib
-	branch = main
+	branch = dev/gk2-unity63-review
