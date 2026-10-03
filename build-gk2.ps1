@@ -31,8 +31,9 @@ try {
     }
 
     $project = Join-Path $PSScriptRoot "UnityExplorer.BepInEx5.MonoBleedingEdge\UnityExplorer.BepInEx5.MonoBleedingEdge.csproj"
+    $solutionDir = $PSScriptRoot.TrimEnd('\') + '\'
 
-    dotnet build $project -c $Configuration "-p:GK2ManagedDir=$managedDir"
+    dotnet build $project -c $Configuration "-p:SolutionDir=$solutionDir" "-p:GK2ManagedDir=$managedDir"
     if ($LASTEXITCODE -ne 0) {
         throw "UnityExplorer GK2 build failed."
     }
