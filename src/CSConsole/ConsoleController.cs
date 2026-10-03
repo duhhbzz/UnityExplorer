@@ -58,7 +58,9 @@ namespace UnityExplorer.CSConsole
             "System.Collections.Generic",
             "System.Reflection",
             "UnityEngine",
+            "UnityEngine.UI",
             "UniverseLib",
+            "UniverseLib.Utility",
 #if IL2CPP
             "Il2CppInterop.Runtime",
             "Il2CppInterop.Runtime.Attributes",
